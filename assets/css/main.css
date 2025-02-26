@@ -3170,18 +3170,22 @@ input, select, textarea {
 	}
 	
 
-	#main .imageMain {
-		width: 70%; /* Adjust width as needed */
-		height: auto; /* Maintain aspect ratio */
-		margin-bottom: 60px;
-		margin-top: 100px;
-		margin-left: auto; /* Center horizontally */
-		margin-right: auto; /* Center horizontally */
-		border: 2px solid #ae85ca;
-		padding: 10px;
-		display: block;
-		text-align: center; /* Doesn't affect images, but good for inline elements */
-	}
+#main .imageMain {
+    width: 70%; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 60px;
+    margin-top: 100px;
+    margin-left: auto; /* Center horizontally */
+    margin-right: auto; /* Center horizontally */
+    border: 2px solid #ae85ca;
+    padding: 10px;
+    display: block;
+    text-align: center; /* Doesn't affect images, but good for inline elements */
+    
+    object-fit: cover; /* Ensures the image fills the container */
+    object-position: top; /* Positions the top part of the image */
+}
+
 	
 	.text-box {
 		background-color: rgb(247, 175, 225);  /* White background */
